@@ -14,12 +14,14 @@ app.use(express.static("public"));
 
 app.use(routes);
 
-mongoose.connect('mongodb://localhost:27017/workout', {
+mongoose.connect(
+    process.env.MONGODB_URI || 'mongodb://localhost:27017/workout', 
+    {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false,
-})
+    })
     .then(() => console.log('Connected to db successfully'))
     .catch(e => console.log(e));
 
