@@ -10,7 +10,7 @@
 A browser based, fitness tracking application featuring Mongo DB. It allows the user to create and store records of workouts, as well as view past statistics.
 
 ## Usage
-The page can be visited [here]().
+The page can be visited [here](https://workout-tracker-dk.herokuapp.com/).
 
 The home page will show the last workout. Click the "Continue Workout" to add a new exercise to the last workout session, or "New Workout" to create a new session. 
 
