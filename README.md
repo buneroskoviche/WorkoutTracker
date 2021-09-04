@@ -1,6 +1,6 @@
 # Workout Tracker
 
-[README.md](https://github.com/buneroskoviche/WorkoutTracker/files/7110560/README.md)
+![screenshot1](https://user-images.githubusercontent.com/80650523/132108888-56eb247c-1188-4523-8074-83eb2edf7d47.PNG)
 
 ## Table of Contents
 * [Description](#description)
