@@ -1,8 +1,14 @@
 const { model, Schema } = require('mongoose');
 
 const workoutSchema = new Schema({
-    day: Date,
-    exercises: Array,
+    day: {
+        type: Date,
+        default: Date.now,
+    },
+    exercises: {
+        type: Array,
+        default: [],
+    }
 });
 
 const Workout = model("Workout", workoutSchema);
