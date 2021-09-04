@@ -30,4 +30,19 @@ router.put('/workouts/:id', async (req, res) => {
         res.status(500).json(e);
     }
 });
+
+router.get('/workouts/range', async (req, res) => {
+    try {
+        const workoutRange = await Workout.aggregate([
+            {$addFields: {
+                totalDuration: {$sum: "$exercises.duration"}
+            }}
+        ]);
+        console.log(workoutRange);
+        res.status(200).json(workoutRange);
+    } catch (e) {
+        res.status(500).json(e);
+    }
+});
+
 module.exports = router;
